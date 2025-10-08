@@ -1,0 +1,106 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 2.1,
+  "settings": {
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1400px"
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "name": "S",
+          "size": "1rem",
+          "slug": "small"
+        },
+        {
+          "name": "M",
+          "size": "1.125rem",
+          "slug": "medium"
+        },
+        {
+          "name": "L",
+          "size": "1.25rem",
+          "slug": "large"
+        },
+        {
+          "name": "XL",
+          "size": "2rem",
+          "slug": "extra-large"
+        }
+      ]
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Primary", 
+          "color": "#fbbf24",
+          "slug": "primary"
+        },
+        {
+          "name": "Secondary", 
+          "color": "#111827",
+          "slug": "secondary"
+        },
+        {
+          "name": "Tertiary",
+          "color": "#000",
+          "slug": "tertiary"
+        },
+        {
+          "name": "Black",
+          "color": "#000",
+          "slug": "black"
+        },
+        {
+          "name": "White",
+          "color": "#fff",
+          "slug": "white"
+        },
+        {
+          "name": "Gray",
+          "color": "#6b7280",
+          "slug": "gray"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#000",
+      "text": "#fff"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--system)"
+    },
+    "blocks": {
+      "core/paragraph": {
+        "color": {
+          "text": "#fff"
+        }
+      }
+    }
+  },
+  "templateParts": {
+    "header": {
+      "area": "header"
+    },
+    "footer": {
+      "area": "footer"
+    }
+  },
+  "templates": [
+    {
+      "slug": "index",
+      "title": "Home",
+      "template": "index",
+      "content": "<!-- wp:template-part {\"slug\":\"header\",\"area\":\"header\",\"tagName\":\"header\"} /-->\n\n<!-- wp:group {\"layout\":{\"inherit\":true}} -->\n<div class=\"wp-block-group\">\n<!-- wp:group {\"layout\":{\"inherit\":true,\"contentSize\":\"1200px\"}} -->\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\"><div class=\"wp-block-group__inner-container\">\n<!-- wp:paragraph {\"align\":\"center\",\"style\":{\"typography\":{\"fontSize\":\"xl\"}},\"textColor\":\"primary\"} -->\n<p class=\"has-text-align-center has-large-font-size has-primary-color\"><strong>Tycoon Floor Care</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Professional Hardwood Floor Refinishing in Los Angeles</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons {\"layout\":{\"justifyContent\":\"center\"},\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\",\"bottom\":\"0\"}},\"textColor\":\"white\"} -->\n<div class=\"wp-block-buttons is-content-justification-center is-style-wide\">\n<!-- wp:button {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\",\"bottom\":\"0\"}}},\"textColor\":\"black\"} -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link has-black-color has-text-color wp-element-button\" href=\"/contact\">Request a Quote</a></div>\n<!-- /wp:button -->\n</div>\n<!-- /wp:buttons -->\n</div></div>\n<!-- /wp:group -->\n</div>\n<!-- /wp:group -->\n\n<!-- wp:template-part {\"slug\":\"footer\",\"area\":\"footer\",\"tagName\":\"footer\"} /-->"
+    },
+    {
+      "slug": "single-location",
+      "title": "Location Page",
+      "template": "single-location",
+      "content": "<!-- wp:template-part {\"slug\":\"header\",\"area\":\"header\",\"tagName\":\"header\"} /-->\n\n<!-- wp:group {\"layout\":{\"inherit\":true,\"contentSize\":\"800px\"}} -->\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\"><div class=\"wp-block-group__inner-container\">\n<!-- wp:post-title /-->\n\n<!-- wp:paragraph -->\n<p class=\"wp-block-post-content\">Location-specific content goes here. Update with location name and details.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons {\"layout\":{\"justifyContent\":\"center\"},\"style\":{\"spacing\":{\"margin\":{\"top\":\"2rem\",\"bottom\":\"2rem\"}}}} -->\n<div class=\"wp-block-buttons is-content-justification-center\">\n<!-- wp:button {\"style\":{\"border\":{\"radius\":\"2rem\"}},\"textColor\":\"black\"} -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link has-black-color has-text-color wp-element-button\" href=\"/contact\">Request a Quote</a></div>\n<!-- /wp:button -->\n</div>\n<!-- /wp:buttons -->\n</div></div>\n<!-- /wp:group -->\n\n<!-- wp:template-part {\"slug\":\"footer\",\"area\":\"footer\",\"tagName\":\"footer\"} /-->"
+    }
+  ]
+}
