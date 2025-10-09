@@ -1,0 +1,104 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": false,
+    "layout": {
+      "contentSize": "1200px",
+      "wideSize": "1400px"
+    },
+    "color": {
+      "palette": [
+        {
+          "slug": "primary",
+          "name": "Primary",
+          "color": "#fbbf24"
+        },
+        {
+          "slug": "secondary",
+          "name": "Secondary",
+          "color": "#111827"
+        },
+        {
+          "slug": "tertiary",
+          "name": "Tertiary",
+          "color": "#000000"
+        },
+        {
+          "slug": "black",
+          "name": "Black",
+          "color": "#000000"
+        },
+        {
+          "slug": "white",
+          "name": "White",
+          "color": "#ffffff"
+        },
+        {
+          "slug": "gray",
+          "name": "Gray",
+          "color": "#6b7280"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "small",
+          "name": "S",
+          "size": "1rem"
+        },
+        {
+          "slug": "medium",
+          "name": "M",
+          "size": "1.125rem"
+        },
+        {
+          "slug": "large",
+          "name": "L",
+          "size": "1.25rem"
+        },
+        {
+          "slug": "extra-large",
+          "name": "XL",
+          "size": "2rem"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#000000",
+      "text": "#ffffff"
+    },
+    "typography": {
+      "fontSize": "1.125rem",
+      "fontFamily": "var(--wp--preset--font-family--system)"
+    },
+    "blocks": {
+      "core/paragraph": {
+        "color": {
+          "text": "#ffffff"
+        }
+      }
+    }
+  },
+  "templateParts": {
+    "header": {
+      "area": "header"
+    },
+    "footer": {
+      "area": "footer"
+    }
+  },
+  "templates": [
+    {
+      "slug": "index",
+      "title": "Home",
+      "content": "<!-- wp:template-part {\"slug\":\"header\",\"area\":\"header\",\"tagName\":\"header\"} /-->\n\n<!-- wp:group {\"layout\":{\"inherit\":true}} -->\n<div class=\"wp-block-group\"><div class=\"wp-block-group__inner-container\"><!-- wp:group {\"layout\":{\"inherit\":true,\"contentSize\":\"1200px\"}} -->\n<div class=\"wp-block-group is-layout-flow wp-block-group-is-layout-flow\"><div class=\"wp-block-group__inner-container\"><!-- wp:paragraph {\"align\":\"center\",\"style\":{\"typography\":{\"fontSize\":\"xl\"}},\"textColor\":\"primary\"} -->\n<p class=\"has-text-align-center has-large-font-size has-primary-color\"><strong>About Tykoon Floor Care</strong></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"align\":\"center\"} -->\n<p class=\"has-text-align-center\">Professional 1-day floor refinishing and furniture restoration experts serving Los Angeles</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:buttons {\"layout\":{\"justifyContent\":\"center\"},\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\",\"bottom\":\"0\"}},\"textColor\":\"white\"}} -->\n<div class=\"wp-block-buttons is-content-justification-center is-style-wide\"><!-- wp:button {\"style\":{\"spacing\":{\"margin\":{\"top\":\"0\",\"bottom\":\"0\"}}},\"textColor\":\"black\"} -->\n<div class=\"wp-block-button\"><a class=\"wp-block-button__link has-black-color has-text-color wp-element-button\" href=\"/contact/\">Get Free Quote</a></div>\n<!-- /wp:button --></div></div>\n<!-- /wp:group --></div></div>\n<!-- /wp:group -->\n\n<!-- wp:template-part {\"slug\":\"footer\",\"area\":\"footer\",\"tagName\":\"footer\"} /-->",
+      "postTypes": [
+        "page"
+      ]
+    }
+  ]
+}
