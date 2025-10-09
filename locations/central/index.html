@@ -3,49 +3,193 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Central LA Locations - Tykoon Floor & Furniture Care</title>
-    <meta name="description" content="Professional floor and furniture refinishing in Central Los Angeles neighborhoods: Mid-Wilshire, Koreatown, Hancock Park, Brookside.">
+    <title>Central LA - Tykoon Floor & Furniture Care</title>
+    <meta name="description" content="Expert floor and furniture refinishing services in Central Los Angeles with 1-day turnaround. Professional, eco-friendly, and reliable care for your valuable pieces.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-['Inter'] antialiased bg-black text-white">
+<body class="font-['Inter'] antialiased bg-black text-gray-900">
+    <header class="fixed w-full bg-black/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../../" class="flex items-center">
+                    <img src="../../images/general/logo/tk-source-file-Black.png" alt="Tykoon Floor & Furniture Care" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Services <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="../../services/hardwood-floors/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hardwood Floors</a>
+                                <a href="../../services/upholstery-leather/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Upholstery & Leather</a>
+                                <a href="../../services/tile-grout-concrete/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Tile, Grout & Concrete</a>
+                                <a href="../../services/programs/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../../about/" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
+                    <a href="../../blog/" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Blog</a>
+                    <a href="../../contact/" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Locations <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-80 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Westside</div>
+                                <a href="../westside/beverly-hills/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Beverly Hills</a>
+                                <a href="../westside/brentwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brentwood</a>
+                                <a href="../westside/santa-monica/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Santa Monica</a>
+                                <a href="../westside/westwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Westwood</a>
+                                <a href="../westside/pacific-palisades/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pacific Palisades</a>
+                                <a href="../westside/marina-del-rey/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Marina del Rey</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Central</div>
+                                <a href="mid-wilshire/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Mid-Wilshire</a>
+                                <a href="koreatown/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Koreatown</a>
+                                <a href="hancock-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hancock Park</a>
+                                <a href="brookside/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brookside</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Eastside</div>
+                                <a href="../eastside/atwater-village/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Atwater Village</a>
+                                <a href="../eastside/eagle-rock/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Eagle Rock</a>
+                                <a href="../eastside/echo-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Echo Park</a>
+                                <a href="../eastside/highland-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Highland Park</a>
+                                <a href="../eastside/silver-lake/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Silver Lake</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Harbor / South Bay</div>
+                                <a href="../harbor-south-bay/long-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Long Beach</a>
+                                <a href="../harbor-south-bay/redondo-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Redondo Beach</a>
+                                <a href="../harbor-south-bay/san-pedro/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">San Pedro</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">San Fernando Valley</div>
+                                <a href="../san-fernando-valley/encino/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Encino</a>
+                                <a href="../san-fernando-valley/north-hollywood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">North Hollywood</a>
+                                <a href="../san-fernando-valley/sherman-oaks/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Sherman Oaks</a>
+                                <a href="../san-fernando-valley/van-nuys/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Van Nuys</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="hidden md:block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-400 transition-colors duration-300 font-semibold">Get a Quote</a>
+            </div>
+        </nav>
+    </header>
+
     <main>
-        <section class="relative h-[400px] flex items-center justify-center" style="background-image: url('../../images/heroes/locations/central/hero.jpg'); background-size: cover; background-position: center;">
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500 leading-tight mb-6">Central LA Locations</h1>
-                    <p class="text-lg md:text-xl text-gray-300 mb-8">Professional refinishing services in the heart of Los Angeles</p>
+        <section class="relative h-[500px] flex items-center justify-center" style="background-image: url('../../images/heroes/locations/central/hero.jpg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black/70"></div>
+            <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">Tykoon Floor & Furniture Care</h1>
+                    <p class="text-xl md:text-2xl text-gray-200 mb-12">Professional 1-Day Refinishing & Upholstery Revival in Central LA</p>
+                    <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Transform Your Central LA Home Today
+                    </a>
                 </div>
             </div>
         </section>
-        <section class="py-24 bg-black">
+
+        <section id="features" class="py-24 bg-black">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="max-w-4xl mx-auto space-y-12">
-                            <h2 class="text-2xl font-bold text-yellow-500 mb-4">Mid-Wilshire</h2>
-                            <p class="text-gray-300 mb-4">Expert floor refinishing for Mid-Wilshire's urban properties.</p>
-                            <a href="mid-wilshire/" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors duration-300">Learn More</a>
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-yellow-500">Why Choose Tykoon in Central LA?</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                        <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
                         </div>
-                            <h2 class="text-2xl font-bold text-yellow-500 mb-4">Koreatown</h2>
-                            <p class="text-gray-300 mb-4">Professional restoration services in vibrant Koreatown.</p>
-                            <a href="koreatown/" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors duration-300">Learn More</a>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Professional</h3>
+                        <p class="text-gray-300 leading-relaxed">Expert craftsmen serving Central LA with years of experience in furniture and floor restoration for urban residences.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                        <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0zm0 12c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0zm0-6c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0z"/>
+                            </svg>
                         </div>
-                            <h2 class="text-2xl font-bold text-yellow-500 mb-4">Hancock Park</h2>
-                            <p class="text-gray-300 mb-4">Luxury refinishing for Hancock Park's historic homes.</p>
-                            <a href="hancock-park/" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors duration-300">Learn More</a>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Eco-friendly</h3>
+                        <p class="text-gray-300 leading-relaxed">Sustainable practices perfect for Central LA's environmentally conscious community using safe, non-toxic materials.</p>
+                    </div>
+
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                        <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
                         </div>
-                            <h2 class="text-2xl font-bold text-yellow-500 mb-4">Brookside</h2>
-                            <p class="text-gray-300 mb-4">Eco-friendly refinishing for Brookside residences.</p>
-                            <a href="brookside/" class="inline-block bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-400 transition-colors duration-300">Learn More</a>
-                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Local Service</h3>
+                        <p class="text-gray-300 leading-relaxed">Proudly serving the Central LA community with quick response times and understanding of urban home needs.</p>
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id="benefits" class="py-24 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-yellow-500">The Tykoon Advantage for Central LA Homes</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Fast Service</h3>
+                        <p class="text-gray-300">1-day refinishing service perfect for busy Central LA lifestyles</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Reliable Results</h3>
+                        <p class="text-gray-300">Consistent, high-quality finishes perfect for urban living</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
+                            <svg class="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Competitive Pricing</h3>
+                        <p class="text-gray-300">Premium service at reasonable rates for Central LA residents</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-black text-white">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-yellow-500">Ready to Transform Your Central LA Home?</h2>
+                <p class="text-xl mb-12 text-gray-300">Experience the Tykoon difference today</p>
+                <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Get Your Free Quote
+                </a>
+            </div>
+        </section>
     </main>
+
     <footer class="bg-gray-900 text-gray-300 py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold text-white mb-4">Tykoon</h3>
-                    <p class="mb-4">Professional floor and furniture care services.</p>
+                    <p class="mb-4">Professional floor and furniture care services serving Central LA.</p>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
@@ -54,24 +198,23 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="../../../services.html" class="hover:text-white transition-colors duration-300">Services</a></li>
-                        <li><a href="../../../about.html" class="hover:text-white transition-colors duration-300">About</a></li>
-                        <li><a href="../../../blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="../../services/" class="hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="../../about/" class="hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="../../blog/" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="../../privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="../../terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="../../privacy/" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="../../terms/" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
                 <p>&copy; 2024 Tykoon Floor & Furniture Care. All rights reserved.</p>
             </div>
         </div>
-                </div>
-        </div>
     </footer>
 </body>
-</html>
+</html>

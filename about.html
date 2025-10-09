@@ -9,110 +9,232 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-['Inter'] antialiased bg-black text-white">
-    <main>
-        <section class="relative h-[400px] flex items-center justify-center" style="background-image: url('images/heroes/about/hero.jpg'); background-size: cover; background-position: center;">
+    <header class="fixed w-full bg-black/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="/" class="flex items-center">
+                    <img src="images/general/logo/tk-source-file-Black.png" alt="Tykoon Floor & Furniture Care" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Services <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="services/hardwood-floors/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hardwood Floors</a>
+                                <a href="services/upholstery-leather/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Upholstery & Leather</a>
+                                <a href="services/tile-grout-concrete/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Tile, Grout & Concrete</a>
+                                <a href="services/programs/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
+                    <a href="blog.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Blog</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Locations <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-80 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Westside</div>
+                                <a href="locations/westside/beverly-hills/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Beverly Hills</a>
+                                <a href="locations/westside/brentwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brentwood</a>
+                                <a href="locations/westside/santa-monica/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Santa Monica</a>
+                                <a href="locations/westside/westwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Westwood</a>
+                                <a href="locations/westside/pacific-palisades/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pacific Palisades</a>
+                                <a href="locations/westside/marina-del-rey/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Marina del Rey</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Central</div>
+                                <a href="locations/central/mid-wilshire/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Mid-Wilshire</a>
+                                <a href="locations/central/koreatown/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Koreatown</a>
+                                <a href="locations/central/hancock-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hancock Park</a>
+                                <a href="locations/central/brookside/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brookside</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="hidden md:block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-400 transition-colors duration-300 font-semibold">Get a Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="relative h-[400px] flex items-center justify-center mt-10" style="background-image: url('images/heroes/about/hero.jpg'); background-size: cover; background-position: center;">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-4xl mx-auto">
                     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500 leading-tight mb-6">About Tykoon Floor & Furniture Care</h1>
                     <p class="text-lg md:text-xl text-gray-300 mb-8">Professional floor refinishing and furniture restoration experts serving Los Angeles with eco-friendly methods and 1-day turnaround.</p>
                 </div>
             </div>
         </section>
+
         <section class="py-24 bg-black">
-                    <!-- What We Do -->
-                        <h2 class="text-3xl font-bold text-white mb-8">What We Do</h2>
-                                <h3 class="text-2xl font-semibold text-yellow-500 mb-4">Floor Refinishing Services</h3>
-                                <p class="text-gray-300 text-lg leading-relaxed">We restore hardwood floors to their original beauty using advanced sanding, staining, and finishing techniques. Our eco-friendly process removes scratches, stains, and wear while applying durable, low-VOC sealants to protect your investment for years to come.</p>
-                                <ul class="space-y-2 text-gray-300 ml-6">
-                                    <li>• Full sanding and refinishing</li>
-                                    <li>• Custom stain matching</li>
-                                    <li>• Eco-friendly, non-toxic finishes</li>
-                                    <li>• 1-day turnaround for most projects</li>
-                                </ul>
-                            </div>
-                                <h3 class="text-2xl font-semibold text-yellow-500 mb-4">Furniture Restoration</h3>
-                                <p class="text-gray-300 text-lg leading-relaxed">Our furniture services extend from cleaning and conditioning leather and fabric upholstery to full restoration of antique pieces. We use professional-grade materials to ensure longevity and beauty in every restoration.</p>
-                                <ul class="space-y-2 text-gray-300 ml-6">
-                                    <li>• Leather cleaning and repair</li>
-                                    <li>• Fabric upholstery cleaning</li>
-                                    <li>• Antique furniture restoration</li>
-                                    <li>• Stain removal and protection</li>
-                                </ul>
-                            </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <!-- What We Do -->
+                <div class="mb-24">
+                    <h2 class="text-3xl font-bold text-white mb-8">What We Do</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="bg-gray-900/50 rounded-xl p-8">
+                            <h3 class="text-2xl font-semibold text-yellow-500 mb-4">Floor Refinishing Services</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed">We restore hardwood floors to their original beauty using advanced sanding, staining, and finishing techniques. Our eco-friendly process removes scratches, stains, and wear while applying durable, low-VOC sealants to protect your investment for years to come.</p>
+                            <ul class="space-y-2 text-gray-300 ml-6 mt-4">
+                                <li>• Full sanding and refinishing</li>
+                                <li>• Custom stain matching</li>
+                                <li>• Eco-friendly, non-toxic finishes</li>
+                                <li>• 1-day turnaround for most projects</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-900/50 rounded-xl p-8">
+                            <h3 class="text-2xl font-semibold text-yellow-500 mb-4">Furniture Restoration</h3>
+                            <p class="text-gray-300 text-lg leading-relaxed">Our furniture services extend from cleaning and conditioning leather and fabric upholstery to full restoration of antique pieces. We use professional-grade materials to ensure longevity and beauty in every restoration.</p>
+                            <ul class="space-y-2 text-gray-300 ml-6 mt-4">
+                                <li>• Leather cleaning and repair</li>
+                                <li>• Fabric upholstery cleaning</li>
+                                <li>• Antique furniture restoration</li>
+                                <li>• Stain removal and protection</li>
+                            </ul>
                         </div>
                     </div>
-                    <!-- How We Do It -->
-                        <h2 class="text-3xl font-bold text-white mb-8">How We Do It</h2>
-                                <h3 class="text-2xl font-semibold text-yellow-500 mb-6">Our Professional Process</h3>
-                                <ol class="space-y-4 text-gray-300">
-                                    <li class="flex items-start">
-                                        <div class="flex-shrink-0 mr-3 text-yellow-500">1</div>
-                                        <div>
-                                            <h4 class="font-semibold mb-2">Free Consultation</h4>
-                                            <p>We assess your floors and furniture on-site, discuss your needs, and provide a detailed plan with no obligation.</p>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <div class="flex-shrink-0 mr-3 text-yellow-500">2</div>
-                                        <div>
-                                            <h4 class="font-semibold mb-2">Preparation</h4>
-                                            <p>Our team prepares the area and surfaces using dust-controlled equipment to ensure a clean and safe process.</p>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <div class="flex-shrink-0 mr-3 text-yellow-500">3</div>
-                                        <div>
-                                            <h4 class="font-semibold mb-2">Restoration Work</h4>
-                                            <p>Using professional tools, we sand, clean, restore, and finish with precision and attention to detail.</p>
-                                        </div>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <div class="flex-shrink-0 mr-3 text-yellow-500">4</div>
-                                        <div>
-                                            <h4 class="font-semibold mb-2">Quality Check</h4>
-                                            <p>We inspect every detail and clean up completely, leaving your space better than we found it.</p>
-                                        </div>
-                                    </li>
-                                </ol>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-semibold text-yellow-500 mb-6">Eco-Friendly & Safe</h3>
-                                <p class="text-gray-300 text-lg mb-6">We use low-VOC, non-toxic products that are safe for families, pets, and the environment. Our dustless sanding system minimizes airborne particles, ensuring a healthier restoration process.</p>
-                                        <h4 class="font-semibold text-white mb-2">Advanced Equipment</h4>
-                                        <p class="text-sm text-gray-300">State-of-the-art sanders and polishers for superior results.</p>
+                </div>
+
+                <!-- How We Do It -->
+                <div class="mb-24">
+                    <h2 class="text-3xl font-bold text-white mb-8">How We Do It</h2>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                        <div class="bg-gray-900/50 rounded-xl p-8">
+                            <h3 class="text-2xl font-semibold text-yellow-500 mb-6">Our Professional Process</h3>
+                            <ol class="space-y-4 text-gray-300">
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center text-yellow-500 mr-3 font-bold">1</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">Free Consultation</h4>
+                                        <p>We assess your floors and furniture on-site, discuss your needs, and provide a detailed plan with no obligation.</p>
                                     </div>
-                                        <h4 class="font-semibold text-white mb-2">Premium Materials</h4>
-                                        <p class="text-sm text-gray-300">High-quality, eco-friendly finishes and cleaners.</p>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center text-yellow-500 mr-3 font-bold">2</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">Preparation</h4>
+                                        <p>Our team prepares the area and surfaces using dust-controlled equipment to ensure a clean and safe process.</p>
                                     </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center text-yellow-500 mr-3 font-bold">3</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">Restoration Work</h4>
+                                        <p>Using professional tools, we sand, clean, restore, and finish with precision and attention to detail.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <div class="flex-shrink-0 w-8 h-8 bg-yellow-500/20 rounded-full flex items-center justify-center text-yellow-500 mr-3 font-bold">4</div>
+                                    <div>
+                                        <h4 class="font-semibold mb-2">Quality Check</h4>
+                                        <p>We inspect every detail and clean up completely, leaving your space better than we found it.</p>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="bg-gray-900/50 rounded-xl p-8">
+                            <h3 class="text-2xl font-semibold text-yellow-500 mb-6">Eco-Friendly & Safe</h3>
+                            <p class="text-gray-300 text-lg mb-6">We use low-VOC, non-toxic products that are safe for families, pets, and the environment. Our dustless sanding system minimizes airborne particles, ensuring a healthier restoration process.</p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
+                                <div class="bg-gray-800/50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-white mb-2">Advanced Equipment</h4>
+                                    <p class="text-sm text-gray-300">State-of-the-art sanders and polishers for superior results.</p>
+                                </div>
+                                <div class="bg-gray-800/50 p-4 rounded-lg">
+                                    <h4 class="font-semibold text-white mb-2">Premium Materials</h4>
+                                    <p class="text-sm text-gray-300">High-quality, eco-friendly finishes and cleaners.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Why Choose Us -->
-                        <h2 class="text-3xl font-bold text-white mb-8">Why Choose Tykoon</h2>
-                        <p class="text-gray-300 text-lg mb-8 max-w-3xl mx-auto">Tykoon Floor & Furniture Care is dedicated to excellence, sustainability, and customer satisfaction. We serve Los Angeles with the highest standards, ensuring every project enhances the beauty and value of your property.</p>
-                                <h3 class="text-xl font-semibold text-yellow-500 mb-2">Quality & Expertise</h3>
-                                <p class="text-gray-300">Years of experience and professional training ensure perfect results every time.</p>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-8">Why Choose Tykoon</h2>
+                    <p class="text-gray-300 text-lg mb-8 max-w-3xl mx-auto">Tykoon Floor & Furniture Care is dedicated to excellence, sustainability, and customer satisfaction. We serve Los Angeles with the highest standards, ensuring every project enhances the beauty and value of your property.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                            <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                                </svg>
                             </div>
-                                <h3 class="text-xl font-semibold text-yellow-500 mb-2">Eco-Conscious</h3>
-                                <p class="text-gray-300">Environmentally safe products and sustainable practices without compromising on quality.</p>
+                            <h3 class="text-xl font-semibold text-yellow-500 mb-2">Quality & Expertise</h3>
+                            <p class="text-gray-300">Years of experience and professional training ensure perfect results every time.</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                            <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0zm0 12c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0zm0-6c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0z"/>
+                                </svg>
                             </div>
-                                <h3 class="text-xl font-semibold text-yellow-500 mb-2">Customer Focused</h3>
-                                <p class="text-gray-300">100% satisfaction guarantee with personalized service and transparent pricing.</p>
+                            <h3 class="text-xl font-semibold text-yellow-500 mb-2">Eco-Conscious</h3>
+                            <p class="text-gray-300">Environmentally safe products and sustainable practices without compromising on quality.</p>
+                        </div>
+                        <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                            <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
+                                <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
                             </div>
+                            <h3 class="text-xl font-semibold text-yellow-500 mb-2">Customer Focused</h3>
+                            <p class="text-gray-300">100% satisfaction guarantee with personalized service and transparent pricing.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <section class="py-12 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h3 class="text-2xl font-bold text-white mb-6">Ready to Transform Your Space?</h3>
+                <p class="text-gray-300 mb-8 max-w-2xl mx-auto">Contact our team today for a free consultation and see the Tykoon difference in your home or business.</p>
                 <a href="contact.html" class="inline-block bg-yellow-500 text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">Get Your Free Quote</a>
             </div>
         </section>
     </main>
+
     <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold text-white mb-4">Tykoon</h3>
+                    <p class="mb-4">Professional floor and furniture care services.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Contact</h4>
+                    <a href="mailto:admin@tykoon.org" class="block hover:text-white transition-colors duration-300">admin@tykoon.org</a>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="services.html" class="hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
                 <p>&copy; 2025 Tykoon Floor & Furniture Care. All rights reserved.</p>
                 <p class="text-sm mt-2 text-gray-400">Serving Los Angeles | Licensed & Insured</p>
             </div>
         </div>
     </footer>
 </body>
-</html>
+</html>

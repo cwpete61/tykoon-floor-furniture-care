@@ -9,70 +9,141 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-['Inter'] antialiased bg-black text-white">
-    <main>
-        <section class="relative h-[400px] flex items-center justify-center" style="background-image: url('../../../images/heroes/services/hardwood floor hero.jpg'); background-size: cover; background-position: bottom center;">
+    <header class="fixed w-full bg-black/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../../../" class="flex items-center">
+                    <img src="../../../images/general/logo/tk-source-file-Black.png" alt="Tykoon Floor & Furniture Care" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Services <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="../../hardwood-floors/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hardwood Floors</a>
+                                <a href="../../upholstery-leather/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Upholstery & Leather</a>
+                                <a href="../../tile-grout-concrete/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Tile, Grout & Concrete</a>
+                                <a href="../../programs/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../../../about.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
+                    <a href="../../../blog.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Blog</a>
+                    <a href="../../../contact.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Locations <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-80 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Westside</div>
+                                <a href="../../../locations/westside/beverly-hills/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Beverly Hills</a>
+                                <a href="../../../locations/westside/brentwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brentwood</a>
+                                <a href="../../../locations/westside/santa-monica/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Santa Monica</a>
+                                <a href="../../../locations/westside/westwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Westwood</a>
+                                <a href="../../../locations/westside/pacific-palisades/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pacific Palisades</a>
+                                <a href="../../../locations/westside/marina-del-rey/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Marina del Rey</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Central</div>
+                                <a href="../../../locations/central/mid-wilshire/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Mid-Wilshire</a>
+                                <a href="../../../locations/central/koreatown/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Koreatown</a>
+                                <a href="../../../locations/central/hancock-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hancock Park</a>
+                                <a href="../../../locations/central/brookside/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brookside</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="hidden md:block bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-400 transition-colors duration-300 font-semibold">Get a Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-20">
+        <section class="relative h-[400px] flex items-center justify-center mt-10" style="background-image: url('../../../images/heroes/services/hardwood floor hero.jpg'); background-size: cover; background-position: bottom center;">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-4xl mx-auto">
                     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500 leading-tight mb-6">Gym Floor Refinishing Services</h1>
                     <p class="text-lg md:text-xl text-gray-200 mb-8">Specialized refinishing for sports floors with durable, high-performance finishes for basketball courts and fitness centers.</p>
                 </div>
             </div>
         </section>
+
         <section class="py-24 bg-black">
-                        <div>
-                            <h2 class="text-2xl font-bold text-white mb-4">Gym Floor Refinishing Specialized Process</h2>
-                            <p class="text-gray-300 leading-relaxed mb-6">Our gym floor refinishing service is specifically designed for high-traffic sports flooring in basketball courts, volleyball courts, and fitness centers. We understand the unique demands placed on gym floors and use specialized equipment and materials to restore safety, performance, and appearance without disrupting athletic schedules.</p>
-                            <p class="text-gray-300 leading-relaxed mb-6">Unlike residential hardwood floor refinishing, gym floor work requires faster drying times, enhanced durability, and specific surface characteristics that perform well under athletic use. Our team specializes in working during off-hours to minimize impact on gym operations while delivering premium results.</p>
-                        </div>
-                        <div>
-                            <h3 class="text-xl font-semibold text-yellow-500 mb-4">Gym Floor Refinishing Process</h3>
-                            <ul class="space-y-3 text-gray-300">
-                                <li class="flex items-start">
-                                    <span class="text-yellow-500 mr-3">•</span>
-                                    <span>Surface preparation with gym-safe dustless sanding equipment</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-yellow-500 mr-3">•</span>
-                                    <span>Repair of damage from athletic equipment and high-impact activities</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-yellow-500 mr-3">•</span>
-                                    <span>Application of gymnasium-grade polyurethane finish systems</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-yellow-500 mr-3">•</span>
-                                    <span>Ultra-violet stable coatings resistant to fading from gym lighting</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-yellow-500 mr-3">•</span>
-                                    <span>Optional slip-resistant surface treatments for safety</span>
-                                </li>
-                                <li class="flex items-start">
-                                    <span class="text-yellow-500 mr-3">•</span>
-                                    <span>Multiple finish options: matte, satin, or gloss finish systems</span>
-                                </li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-white mb-4">Sports Floor Maintenance Benefits</h2>
-                            <p class="text-gray-300 leading-relaxed mb-4">A well-maintained gym floor is an investment in safety and performance. Our refinishing services restore traction, cushioning, and durability while improving the visual appeal of your facility. Whether you're a school district, fitness center, recreation department, or private sports club, we deliver the specialized care your athletic surfaces require.</p>
-                            <p class="text-gray-300 leading-relaxed mb-4"> serving schools from Beverly Hills to Inglewood, and fitness facilities throughout Los Angeles County, our team has extensive experience with all types of gym flooring including maple, birch, and specialty sports hardwood. We work efficiently during off-hours to ensure minimal disruption to your schedules.</p>
-                        </div>
-                            <h2 class="text-2xl font-bold text-white mb-4">Ready to Refinish Your Gym Floor?</h2>
-                            <p class="text-gray-300 mb-8">Contact Tykoon for specialized gym floor refinishing in Los Angeles.</p>
-                            <a href="../../../contact.html" class="inline-block bg-yellow-500 text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">Schedule Gym Floor Service</a>
-                        </div>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                    <div class="bg-gray-900/50 rounded-xl p-8">
+                        <h2 class="text-2xl font-bold text-white mb-4">Gym Floor Refinishing Specialized Process</h2>
+                        <p class="text-gray-300 leading-relaxed mb-6">Our gym floor refinishing service is specifically designed for high-traffic sports flooring in basketball courts, volleyball courts, and fitness centers. We understand the unique demands placed on gym floors and use specialized equipment and materials to restore safety, performance, and appearance without disrupting athletic schedules.</p>
+                        <p class="text-gray-300 leading-relaxed mb-6">Unlike residential hardwood floor refinishing, gym floor work requires faster drying times, enhanced durability, and specific surface characteristics that perform well under athletic use. Our team specializes in working during off-hours to minimize impact on gym operations while delivering premium results.</p>
                     </div>
+
+                    <div class="bg-gray-900/50 rounded-xl p-8">
+                        <h3 class="text-xl font-semibold text-yellow-500 mb-4">Gym Floor Refinishing Process</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-3">•</span>
+                                <span>Surface preparation with gym-safe dustless sanding equipment</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-3">•</span>
+                                <span>Repair of damage from athletic equipment and high-impact activities</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-3">•</span>
+                                <span>Application of gymnasium-grade polyurethane finish systems</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-3">•</span>
+                                <span>Ultra-violet stable coatings resistant to fading from gym lighting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-3">•</span>
+                                <span>Optional slip-resistant surface treatments for safety</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-yellow-500 mr-3">•</span>
+                                <span>Multiple finish options: matte, satin, or gloss finish systems</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="mt-16">
+                    <div class="bg-gray-900/50 rounded-xl p-8">
+                        <h2 class="text-2xl font-bold text-white mb-4">Sports Floor Maintenance Benefits</h2>
+                        <p class="text-gray-300 leading-relaxed mb-4">A well-maintained gym floor is an investment in safety and performance. Our refinishing services restore traction, cushioning, and durability while improving the visual appeal of your facility. Whether you're a school district, fitness center, recreation department, or private sports club, we deliver the specialized care your athletic surfaces require.</p>
+                        <p class="text-gray-300 leading-relaxed mb-4">Serving schools from Beverly Hills to Inglewood, and fitness facilities throughout Los Angeles County, our team has extensive experience with all types of gym flooring including maple, birch, and specialty sports hardwood. We work efficiently during off-hours to ensure minimal disruption to your schedules.</p>
+                    </div>
+                </div>
+
+                <div class="mt-16 text-center">
+                    <h2 class="text-2xl font-bold text-white mb-4">Ready to Refinish Your Gym Floor?</h2>
+                    <p class="text-gray-300 mb-8">Contact Tykoon for specialized gym floor refinishing in Los Angeles.</p>
+                    <a href="../../../contact.html" class="inline-block bg-yellow-500 text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-400 transition-colors duration-300">Schedule Gym Floor Service</a>
                 </div>
             </div>
         </section>
+
         <section class="py-24 bg-gray-900">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl font-bold text-center mb-12 text-yellow-500">Professional Gym Floor Refinishing in Los Angeles</h2>
+                <div class="max-w-4xl mx-auto bg-gray-800/50 p-8 rounded-xl">
                     <p class="text-gray-300 mb-6">Tykoon Floor & Furniture Care provides specialized gym floor refinishing services for athletic facilities throughout Southern California. Our team understands the unique requirements of sports flooring and uses industry-leading techniques to restore performance, safety, and appearance for basketball courts, volleyball courts, and multi-purpose gym spaces.</p>
                     <p class="text-gray-300 mb-6">From high school gyms to professional training facilities and community recreation centers in the greater Los Angeles area, we deliver dependable results that extend floor life and ensure optimal playing conditions. Our eco-friendly finishing systems meet all environmental standards while providing the durability and UV stability required for gyms and sports facilities.</p>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="bg-black text-gray-300 py-12">
+
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold text-white mb-4">Tykoon</h3>
                     <p class="mb-4">Professional floor and furniture care services.</p>
@@ -84,9 +155,9 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><a href="../../../services.html" class="hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="../../../about.html" class="hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="../../../blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
@@ -97,9 +168,10 @@
                     </ul>
                 </div>
             </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
                 <p>&copy; 2024 Tykoon Floor & Furniture Care. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
-</html>
+</html>
