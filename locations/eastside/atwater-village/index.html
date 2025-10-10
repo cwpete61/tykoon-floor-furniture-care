@@ -8,7 +8,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body class="font-['Inter'] antialiased bg-black text-gray-900">
+<body class="font-['Inter'] antialiased bg-black text-white">
     <header class="fixed w-full bg-black/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
@@ -31,9 +31,9 @@
                             </div>
                         </div>
                     </div>
-                    <a href="../../../about/" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
-                    <a href="../../../blog/" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Blog</a>
-                    <a href="../../../contact/" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
+                    <a href="../../../about.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
+                    <a href="../../../blog.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Blog</a>
+                    <a href="../../../contact.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
                     <div class="relative group">
                         <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
                             Locations <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,32 +43,45 @@
                         <div class="absolute top-full left-0 mt-2 w-80 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                             <div class="py-2">
                                 <div class="px-4 py-2 text-yellow-500 font-semibold">Westside</div>
-                                <a href="../westside/beverly-hills/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Beverly Hills</a>
-                                <a href="../westside/brentwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brentwood</a>
-                                <a href="../westside/santa-monica/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Santa Monica</a>
-                                <a href="../westside/westwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Westwood</a>
-                                <a href="../westside/pacific-palisades/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pacific Palisades</a>
-                                <a href="../westside/marina-del-rey/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Marina del Rey</a>
+                                <a href="../../westside/beverly-hills/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Beverly Hills</a>
+                                <a href="../../westside/brentwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brentwood</a>
+                                <a href="../../westside/marina-del-rey/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Marina del Rey</a>
+                                <a href="../../westside/pacific-palisades/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pacific Palisades</a>
+                                <a href="../../westside/santa-monica/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Santa Monica</a>
+                                <a href="../../westside/westwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Westwood</a>
                                 <div class="px-4 py-2 text-yellow-500 font-semibold">Central</div>
-                                <a href="../central/mid-wilshire/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Mid-Wilshire</a>
-                                <a href="../central/koreatown/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Koreatown</a>
-                                <a href="../central/hancock-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hancock Park</a>
-                                <a href="../central/brookside/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brookside</a>
+                                <a href="../../central/brookside/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brookside</a>
+                                <a href="../../central/hancock-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hancock Park</a>
+                                <a href="../../central/koreatown/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Koreatown</a>
+                                <a href="../../central/mid-wilshire/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Mid-Wilshire</a>
                                 <div class="px-4 py-2 text-yellow-500 font-semibold">Eastside</div>
-                                <a href="atwater-village/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Atwater Village</a>
-                                <a href="eagle-rock/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Eagle Rock</a>
-                                <a href="echo-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Echo Park</a>
-                                <a href="highland-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Highland Park</a>
-                                <a href="silver-lake/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Silver Lake</a>
-                                <div class="px-4 py-2 text-yellow-500 font-semibold">Harbor / South Bay</div>
-                                <a href="../harbor-south-bay/long-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Long Beach</a>
-                                <a href="../harbor-south-bay/redondo-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Redondo Beach</a>
-                                <a href="../harbor-south-bay/san-pedro/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">San Pedro</a>
+                                <a href="../atwater-village/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Atwater Village</a>
+                                <a href="../eagle-rock/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Eagle Rock</a>
+                                <a href="../echo-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Echo Park</a>
+                                <a href="../highland-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Highland Park</a>
+                                <a href="../silver-lake/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Silver Lake</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Harbor/South Bay</div>
+                                <a href="../../harbor-south-bay/long-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Long Beach</a>
+                                <a href="../../harbor-south-bay/redondo-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Redondo Beach</a>
+                                <a href="../../harbor-south-bay/san-pedro/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">San Pedro</a>
                                 <div class="px-4 py-2 text-yellow-500 font-semibold">San Fernando Valley</div>
-                                <a href="../san-fernando-valley/encino/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Encino</a>
-                                <a href="../san-fernando-valley/north-hollywood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">North Hollywood</a>
-                                <a href="../san-fernando-valley/sherman-oaks/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Sherman Oaks</a>
-                                <a href="../san-fernando-valley/van-nuys/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Van Nuys</a>
+                                <a href="../../san-fernando-valley/burbank/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Burbank</a>
+                                <a href="../../san-fernando-valley/encino/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Encino</a>
+                                <a href="../../san-fernando-valley/north-hollywood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">North Hollywood</a>
+                                <a href="../../san-fernando-valley/sherman-oaks/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Sherman Oaks</a>
+                                <a href="../../san-fernando-valley/van-nuys/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Van Nuys</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">San Gabriel Valley</div>
+                                <a href="../../san-gabriel-valley/alhambra/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Alhambra</a>
+                                <a href="../../san-gabriel-valley/arcadia/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Arcadia</a>
+                                <a href="../../san-gabriel-valley/monterey-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Monterey Park</a>
+                                <a href="../../san-gabriel-valley/pasadena/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pasadena</a>
+                                <a href="../../san-gabriel-valley/san-marino/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">San Marino</a>
+                                <a href="../../san-gabriel-valley/south-pasadena/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">South Pasadena</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">South LA</div>
+                                <a href="../../south-la/hawthorne/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hawthorne</a>
+                                <a href="../../south-la/inglewood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Inglewood</a>
+                                <a href="../../south-la/south-los-angeles/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">South Los Angeles</a>
+                                <a href="../../south-la/torrance/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Torrance</a>
                             </div>
                         </div>
                     </div>

@@ -9,18 +9,107 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body class="font-['Inter'] antialiased bg-black text-white">
-    <main>
+    <header class="fixed w-full bg-black/95 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <a href="../../../" class="flex items-center">
+                    <img src="../../../images/general/logo/tk-source-file-Black.png" alt="Tykoon Floor & Furniture Care" class="h-8 w-auto">
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Services <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-64 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <a href="../../hardwood-floors/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hardwood Floors</a>
+                                <a href="../" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Upholstery & Leather</a>
+                                <a href="../../tile-grout-concrete/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Tile, Grout & Concrete</a>
+                                <a href="../../programs/" class="block px-4 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Programs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="../../../about.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">About</a>
+                    <a href="../../../blog.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Blog</a>
+                    <a href="../../../contact.html" class="text-gray-300 hover:text-yellow-500 transition-colors duration-300">Contact</a>
+                    <div class="relative group">
+                        <button class="text-gray-300 hover:text-yellow-500 transition-colors duration-300 flex items-center">
+                            Locations <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                            </svg>
+                        </button>
+                        <div class="absolute top-full left-0 mt-2 w-80 bg-black/95 backdrop-blur-sm rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+                            <div class="py-2">
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Westside</div>
+                                <a href="../../../locations/westside/beverly-hills/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Beverly Hills</a>
+                                <a href="../../../locations/westside/brentwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brentwood</a>
+                                <a href="../../../locations/westside/marina-del-rey/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Marina del Rey</a>
+                                <a href="../../../locations/westside/pacific-palisades/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pacific Palisades</a>
+                                <a href="../../../locations/westside/santa-monica/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Santa Monica</a>
+                                <a href="../../../locations/westside/westwood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Westwood</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Central</div>
+                                <a href="../../../locations/central/brookside/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Brookside</a>
+                                <a href="../../../locations/central/hancock-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hancock Park</a>
+                                <a href="../../../locations/central/koreatown/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Koreatown</a>
+                                <a href="../../../locations/central/mid-wilshire/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Mid-Wilshire</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Eastside</div>
+                                <a href="../../../locations/eastside/atwater-village/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Atwater Village</a>
+                                <a href="../../../locations/eastside/eagle-rock/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Eagle Rock</a>
+                                <a href="../../../locations/eastside/echo-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Echo Park</a>
+                                <a href="../../../locations/eastside/highland-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Highland Park</a>
+                                <a href="../../../locations/eastside/silver-lake/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Silver Lake</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">Harbor/South Bay</div>
+                                <a href="../../../locations/harbor-south-bay/long-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Long Beach</a>
+                                <a href="../../../locations/harbor-south-bay/redondo-beach/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Redondo Beach</a>
+                                <a href="../../../locations/harbor-south-bay/san-pedro/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">San Pedro</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">San Fernando Valley</div>
+                                <a href="../../../locations/san-fernando-valley/burbank/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Burbank</a>
+                                <a href="../../../locations/san-fernando-valley/encino/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Encino</a>
+                                <a href="../../../locations/san-fernando-valley/north-hollywood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">North Hollywood</a>
+                                <a href="../../../locations/san-fernando-valley/sherman-oaks/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Sherman Oaks</a>
+                                <a href="../../../locations/san-fernando-valley/van-nuys/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Van Nuys</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">San Gabriel Valley</div>
+                                <a href="../../../locations/san-gabriel-valley/alhambra/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Alhambra</a>
+                                <a href="../../../locations/san-gabriel-valley/arcadia/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Arcadia</a>
+                                <a href="../../../locations/san-gabriel-valley/monterey-park/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Monterey Park</a>
+                                <a href="../../../locations/san-gabriel-valley/pasadena/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Pasadena</a>
+                                <a href="../../../locations/san-gabriel-valley/san-marino/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">San Marino</a>
+                                <a href="../../../locations/san-gabriel-valley/south-pasadena/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">South Pasadena</a>
+                                <div class="px-4 py-2 text-yellow-500 font-semibold">South LA</div>
+                                <a href="../../../locations/south-la/hawthorne/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Hawthorne</a>
+                                <a href="../../../locations/south-la/inglewood/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Inglewood</a>
+                                <a href="../../../locations/south-la/south-los-angeles/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">South Los Angeles</a>
+                                <a href="../../../locations/south-la/torrance/" class="block px-8 py-2 text-gray-300 hover:text-yellow-500 hover:bg-black/50">Torrance</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="tel:+13233798057" class="text-4xl font-bold text-yellow-500 hover:text-yellow-400 transition-colors duration-300">+1 (323) 379-8057</a>
+            </div>
+        </nav>
+    </header>
+    <main class="pt-20">
         <section class="relative h-[400px] flex items-center justify-center" style="background-image: url('../../../../images/heroes/services/upholstery-leather.jpg'); background-size: cover; background-position: bottom center;">
+            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="max-w-4xl mx-auto">
                     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-yellow-500 leading-tight mb-6">Leather Furniture Restoration</h1>
                     <p class="text-lg md:text-xl text-gray-200 mb-8">Professional leather cleaning, conditioning, and restoration services. Repair cracks, restore color, and protect your leather furniture for years to come. Serving Los Angeles homes and offices.</p>
                 </div>
             </div>
         </section>
         <section class="py-24 bg-black">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto space-y-12">
+                    <div class="bg-gray-900/50 rounded-xl p-8">
                         <h2 class="text-2xl font-bold text-white mb-4">What is Leather Furniture Restoration?</h2>
                         <p class="text-gray-300 leading-relaxed mb-6">Our leather furniture restoration service combines deep cleaning, conditioning, color restoration, and protection to bring your leather furniture back to life. We address common issues like cracking, fading, peeling, and surface damage using specialized products and techniques designed for different leather types including full-grain, top-grain, bonded, and faux leather.</p>
                         <p class="text-gray-300 leading-relaxed mb-6">This comprehensive service is ideal for luxury homes in Beverly Hills, Santa Monica, and Pacific Palisades, as well as commercial spaces like offices, hotels, and restaurants throughout Los Angeles. Our technicians assess each piece individually to determine the most appropriate restoration approach for your specific leather type and condition.</p>
                     </div>
+                    
+                    <div class="bg-gray-900/50 rounded-xl p-8">
                         <h3 class="text-xl font-semibold text-yellow-500 mb-4">Service Details</h3>
                         <ul class="space-y-3 text-gray-300">
                             <li class="flex items-start">
@@ -45,10 +134,14 @@
                             </li>
                         </ul>
                     </div>
+                    
+                    <div class="bg-gray-900/50 rounded-xl p-8">
                         <h2 class="text-2xl font-bold text-white mb-4">Benefits of Leather Restoration</h2>
                         <p class="text-gray-300 leading-relaxed mb-4">Professional leather restoration extends the life of your furniture by years, saving you the cost of replacement. Our process not only improves appearance but also restores the leather's natural properties, preventing further damage and deterioration. Regular maintenance and restoration protect your investment and maintain the value of high-end leather pieces.</p>
                         <p class="text-gray-300 leading-relaxed mb-4">For Los Angeles's dry climate, leather conditioning is essential to prevent cracking and maintain suppleness. Our restoration services are particularly valuable for antique pieces, family heirlooms, and high-end designer furniture that require specialized care to preserve their beauty and structural integrity.</p>
                     </div>
+                    
+                    <div class="text-center">
                         <h2 class="text-2xl font-bold text-white mb-4">Ready to Restore Your Leather Furniture?</h2>
                         <p class="text-gray-300 mb-8">Contact Tykoon for professional leather furniture restoration in Los Angeles.</p>
                         <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20leather%20furniture%20restoration%20services." target="_blank" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 transition-colors duration-300 flex items-center justify-center">
@@ -59,9 +152,13 @@
             </div>
         </section>
         <section class="py-24 bg-gray-900">
-                    <h2 class="text-3xl font-bold text-center mb-12 text-yellow-500">Expert Leather Furniture Restoration in Los Angeles</h2>
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center mb-12 text-yellow-500">Expert Leather Furniture Restoration in Los Angeles</h2>
+                <div class="max-w-4xl mx-auto">
+                    <div class="mb-8">
                         <img src="../../../../images/general/services/leather-furniture.jpg" alt="Leather Furniture Restoration Process" class="w-full h-64 object-cover rounded-lg">
                     </div>
+                    <div class="space-y-6 text-gray-300">
                         <p class="mb-6">Tykoon Floor & Furniture Care specializes in professional leather furniture restoration throughout Los Angeles County. Our expert technicians understand the unique characteristics of different leather types and use industry-leading products to restore and protect your valuable furniture. From cracked office chairs in Downtown LA to faded luxury sofas in Beverly Hills, we deliver exceptional results.</p>
                         <p class="mb-6">We serve all Los Angeles neighborhoods including Westwood, Santa Monica, Koreatown, and beyond, providing convenient mobile service for both residential and commercial clients. Our restoration process is designed to be minimally disruptive while delivering maximum impact, bringing your leather furniture back to its original beauty and extending its lifespan for years to come.</p>
                     </div>
@@ -69,7 +166,9 @@
             </div>
         </section>
     </main>
-    <footer class="bg-black text-gray-300 py-12">
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
                     <h3 class="text-xl font-bold text-white mb-4">Tykoon</h3>
                     <p class="mb-4">Professional floor and furniture care services.</p>
@@ -81,22 +180,23 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li></li>
-                        <li></li>
-                        <li></li>
+                        <li><a href="../../../services.html" class="hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="../../../about.html" class="hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="../../../blog.html" class="hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Legal</h4>
                     <ul class="space-y-2">
-                        <li><a href="../../../../privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="../../../../terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="../../../privacy.html" class="hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="../../../terms.html" class="hover:text-white transition-colors duration-300">Terms of Service</a></li>
                     </ul>
                 </div>
             </div>
-                <p>&copy; 2024 Tykoon Floor & Furniture Care. All rights reserved.</p>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center">
+                <p>&copy; 2025 Tykoon Floor & Furniture Care. All rights reserved.</p>
             </div>
         </div>
     </footer>
 </body>
-</html>
+</html>
