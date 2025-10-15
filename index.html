@@ -8,8 +8,25 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="mobile-menu.js" defer></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-primary': '#4C3823',
+                        'brand-secondary': '#6B4E3D',
+                        'brand-accent': '#D4A574',
+                        'brand-light': '#E8D5C4',
+                        'yellow-500': '#EAB308',
+                        'yellow-400': '#FACC15',
+                        'yellow-600': '#CA8A04'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body class="font-['Inter'] antialiased bg-black text-gray-900">
+<body class="font-['Inter'] antialiased bg-[#481809] text-gray-900">
     <header class="fixed w-full bg-black/95 backdrop-blur-sm shadow-sm z-50">
         <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div class="flex items-center justify-between">
@@ -196,31 +213,6 @@
                             </div>
                         </div>
                     </div>
-                                <a href="locations/central/mid-wilshire/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Mid-Wilshire</a>
-                                <a href="locations/central/koreatown/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Koreatown</a>
-                                <a href="locations/central/hancock-park/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Hancock Park</a>
-                                <a href="locations/central/brookside/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Brookside</a>
-                                
-                                <div class="text-yellow-500 font-semibold py-2">Eastside</div>
-                                <a href="locations/eastside/atwater-village/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Atwater Village</a>
-                                <a href="locations/eastside/eagle-rock/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Eagle Rock</a>
-                                <a href="locations/eastside/echo-park/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Echo Park</a>
-                                <a href="locations/eastside/highland-park/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Highland Park</a>
-                                <a href="locations/eastside/silver-lake/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Silver Lake</a>
-                                
-                                <div class="text-yellow-500 font-semibold py-2">Harbor / South Bay</div>
-                                <a href="locations/harbor-south-bay/long-beach/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Long Beach</a>
-                                <a href="locations/harbor-south-bay/redondo-beach/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Redondo Beach</a>
-                                <a href="locations/harbor-south-bay/san-pedro/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">San Pedro</a>
-                                
-                                <div class="text-yellow-500 font-semibold py-2">San Fernando Valley</div>
-                                <a href="locations/san-fernando-valley/encino/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Encino</a>
-                                <a href="locations/san-fernando-valley/north-hollywood/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">North Hollywood</a>
-                                <a href="locations/san-fernando-valley/sherman-oaks/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Sherman Oaks</a>
-                                <a href="locations/san-fernando-valley/van-nuys/" class="block py-2 pl-4 text-gray-300 hover:text-yellow-500 transition-colors duration-300">Van Nuys</a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </nav>
             
@@ -237,12 +229,13 @@
     </div>
 
     <main>
-        <section class="relative h-[500px] flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
+        <!-- Hero Section -->
+        <section class="relative h-[600px] flex items-center justify-center" style="background-image: url('https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'); background-size: cover; background-position: center;">
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">Tykoon Floor & Furniture Care</h1>
-                    <p class="text-xl md:text-2xl text-gray-200 mb-12">The Masters of 1-Day Refinishing & Upholstery Revival</p>
+                    <p class="text-xl md:text-2xl text-gray-200 mb-8">The Masters of 1-Day Refinishing & Upholstery Revival</p>
                     <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
                         <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
@@ -253,11 +246,218 @@
             </div>
         </section>
 
-        <section id="features" class="py-24 bg-black">
+        <!-- Trust Indicators Section -->
+        <section class="py-16 bg-[#3D2412]">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                    <div>
+                        <div class="text-3xl font-bold text-brand-accent mb-2">500+</div>
+                        <div class="text-gray-300">Happy Clients</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand-accent mb-2">15+</div>
+                        <div class="text-gray-300">Years Experience</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand-accent mb-2">1-Day</div>
+                        <div class="text-gray-300">Service Guarantee</div>
+                    </div>
+                    <div>
+                        <div class="text-3xl font-bold text-brand-accent mb-2">5★</div>
+                        <div class="text-gray-300">Customer Rating</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-24 bg-black">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">Our Services</h2>
+                    <p class="text-gray-300 text-lg">Professional floor and furniture care solutions for your home or business</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Hardwood Floors Services -->
+                    <a href="services/hardwood-floors/1-day-screen-recoat/" class="group bg-[#3D2412] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-yellow-500">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/1-Day Screen & Recoat Hardwood Floor Refinishing.jpg" alt="1-Day Screen & Recoat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-yellow-500 transition-colors">1-Day Screen & Recoat</h3>
+                            <p class="text-gray-300 text-sm">Fast, affordable maintenance for lightly worn hardwood floors. Complete in just one day with eco-friendly finishes.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="services/hardwood-floors/full-sanding-refinishing/" class="group bg-[#3D2412] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-yellow-500">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/full sanding & refinishing hardwood floors.jpg" alt="Full Sanding & Refinishing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-yellow-500 transition-colors">Full Sanding & Refinishing</h3>
+                            <p class="text-gray-300 text-sm">Complete restoration for heavily worn floors. Professional sanding and custom staining for a like-new finish.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="services/hardwood-floors/wood-floor-cleaning-polishing/" class="group bg-[#3D2412] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-yellow-500">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/Wood Floor Cleaning & Polishing.jpg" alt="Wood Floor Cleaning & Polishing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-yellow-500 transition-colors">Cleaning & Polishing</h3>
+                            <p class="text-gray-300 text-sm">Professional deep cleaning and polishing to remove dirt, scratches, and restore shine to your hardwood floors.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="services/hardwood-floors/gym-floor-refinishing/" class="group bg-[#3D2412] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-yellow-500">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/Gym Floor Refinishing.jpg" alt="Gym Floor Refinishing" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-yellow-500 transition-colors">Gym Floor Refinishing</h3>
+                            <p class="text-gray-300 text-sm">Specialized refinishing for sports floors. Durable, high-performance finishes for basketball courts and fitness centers.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="services/upholstery-leather/fabric-upholstery/" class="group bg-[#3D2412] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-yellow-500">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/fabric-upholstery.jpg" alt="Fabric Upholstery Cleaning" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-yellow-500 transition-colors">Fabric Upholstery Cleaning</h3>
+                            <p class="text-gray-300 text-sm">Deep cleaning for sofas, chairs, and all fabric upholstery. Removes dirt, stains, and allergens with eco-friendly methods.</p>
+                        </div>
+                    </a>
+                    
+                    <a href="services/upholstery-leather/leather-furniture/" class="group bg-[#3D2412] rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-800 hover:border-yellow-500">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/leather-furniture.jpg" alt="Leather Furniture Restoration" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-3 text-white group-hover:text-yellow-500 transition-colors">Leather Furniture Restoration</h3>
+                            <p class="text-gray-300 text-sm">Complete leather care including cleaning, conditioning, color restoration, and protection for all leather furniture.</p>
+                        </div>
+                    </a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="py-24 bg-[#3D2412]">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">Our Simple Process</h2>
+                    <p class="text-gray-300 text-lg">From consultation to completion, we make it easy</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-black">1</div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Free Consultation</h3>
+                        <p class="text-gray-300 text-sm">Contact us for a no-obligation assessment and quote</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-black">2</div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Schedule Service</h3>
+                        <p class="text-gray-300 text-sm">Choose a convenient time for our team to visit</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-black">3</div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Professional Service</h3>
+                        <p class="text-gray-300 text-sm">Our experts transform your floors and furniture</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-4 text-2xl font-bold text-black">4</div>
+                        <h3 class="text-lg font-semibold text-white mb-2">Enjoy Results</h3>
+                        <p class="text-gray-300 text-sm">Experience your beautifully restored home or office</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="py-24 bg-black">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">What Our Clients Say</h2>
+                    <p class="text-gray-300 text-lg">Real reviews from satisfied customers throughout Los Angeles</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#3D2412] rounded-xl p-6 border border-gray-800">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4 italic">"Amazing service! My hardwood floors look brand new after the 1-day screen and recoat. The team was professional, efficient, and the results exceeded my expectations."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold mr-3">JD</div>
+                            <div>
+                                <div class="font-semibold text-white">Jennifer Davis</div>
+                                <div class="text-sm text-gray-400">Beverly Hills</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-[#3D2412] rounded-xl p-6 border border-gray-800">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4 italic">"I had my leather sofa restored and it looks incredible! You can't even tell where the damage was. The attention to detail and quality of work is outstanding."</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold mr-3">MR</div>
+                            <div>
+                                <div class="font-semibold text-white">Michael Rodriguez</div>
+                                <div class="text-sm text-gray-400">Santa Monica</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-[#3D2412] rounded-xl p-6 border border-gray-800">
+                        <div class="flex items-center mb-4">
+                            <div class="flex text-yellow-500">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20"><path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z"/></svg>
+                            </div>
+                        </div>
+                        <p class="text-gray-300 mb-4 italic">"The gym floor refinishing was completed on schedule and the quality is exceptional. Our basketball court has never looked better. Highly recommend!"</p>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-black font-bold mr-3">TC</div>
+                            <div>
+                                <div class="font-semibold text-white">Tom Chen</div>
+                                <div class="text-sm text-gray-400">Encino</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Tykoon Section -->
+        <section class="py-24 bg-[#3D2412]">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-yellow-500">Why Choose Tykoon?</h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                    <div class="bg-black rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
                         <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
@@ -267,7 +467,7 @@
                         <p class="text-gray-300 leading-relaxed">Expert craftsmen with years of experience in furniture and floor restoration.</p>
                     </div>
 
-                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                    <div class="bg-black rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
                         <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0zm0 12c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0zm0-6c0 1.1.9 2 2 2h14a2 2 0 002-2v0a2 2 0 00-2-2H5a2 2 0 00-2 2v0z"/>
@@ -277,7 +477,7 @@
                         <p class="text-gray-300 leading-relaxed">Sustainable practices and environmentally conscious materials for your peace of mind.</p>
                     </div>
 
-                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
+                    <div class="bg-black rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-800">
                         <div class="w-16 h-16 bg-yellow-500/20 rounded-full flex items-center justify-center mb-6">
                             <svg class="w-8 h-8 text-yellow-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
@@ -291,58 +491,122 @@
             </div>
         </section>
 
-        <section id="benefits" class="py-24 bg-gray-900">
+        <!-- Areas Served Section -->
+        <section class="py-24 bg-black">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-yellow-500">The Tykoon Advantage</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4 text-white">Fast Service</h3>
-                        <p class="text-gray-300">1-day refinishing service to minimize disruption to your space</p>
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">Areas We Serve</h2>
+                    <p class="text-gray-300 text-lg">Professional floor and furniture care throughout Los Angeles County</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-[#3D2412] rounded-xl p-6 border border-gray-800">
+                        <h3 class="text-xl font-semibold text-yellow-500 mb-4">Westside</h3>
+                        <ul class="space-y-2">
+                            <li><a href="locations/westside/beverly-hills/" class="text-gray-300 hover:text-yellow-500 transition-colors">Beverly Hills</a></li>
+                            <li><a href="locations/westside/brentwood/" class="text-gray-300 hover:text-yellow-500 transition-colors">Brentwood</a></li>
+                            <li><a href="locations/westside/santa-monica/" class="text-gray-300 hover:text-yellow-500 transition-colors">Santa Monica</a></li>
+                            <li><a href="locations/westside/westwood/" class="text-gray-300 hover:text-yellow-500 transition-colors">Westwood</a></li>
+                            <li><a href="locations/westside/pacific-palisades/" class="text-gray-300 hover:text-yellow-500 transition-colors">Pacific Palisades</a></li>
+                            <li><a href="locations/westside/marina-del-rey/" class="text-gray-300 hover:text-yellow-500 transition-colors">Marina del Rey</a></li>
+                        </ul>
                     </div>
-
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4 text-white">Reliable Results</h3>
-                        <p class="text-gray-300">Consistent, high-quality finishes every time</p>
+                    
+                    <div class="bg-[#3D2412] rounded-xl p-6 border border-gray-800">
+                        <h3 class="text-xl font-semibold text-yellow-500 mb-4">Central & Eastside</h3>
+                        <ul class="space-y-2">
+                            <li><a href="locations/central/mid-wilshire/" class="text-gray-300 hover:text-yellow-500 transition-colors">Mid-Wilshire</a></li>
+                            <li><a href="locations/central/koreatown/" class="text-gray-300 hover:text-yellow-500 transition-colors">Koreatown</a></li>
+                            <li><a href="locations/central/hancock-park/" class="text-gray-300 hover:text-yellow-500 transition-colors">Hancock Park</a></li>
+                            <li><a href="locations/eastside/silver-lake/" class="text-gray-300 hover:text-yellow-500 transition-colors">Silver Lake</a></li>
+                            <li><a href="locations/eastside/echo-park/" class="text-gray-300 hover:text-yellow-500 transition-colors">Echo Park</a></li>
+                            <li><a href="locations/eastside/highland-park/" class="text-gray-300 hover:text-yellow-500 transition-colors">Highland Park</a></li>
+                        </ul>
                     </div>
-
-                    <div class="text-center">
-                        <div class="w-20 h-20 bg-yellow-500 rounded-full flex items-center justify-center mx-auto mb-6">
-                            <svg class="w-10 h-10 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-semibold mb-4 text-white">Competitive Pricing</h3>
-                        <p class="text-gray-300">Premium service at reasonable rates</p>
+                    
+                    <div class="bg-[#3D2412] rounded-xl p-6 border border-gray-800">
+                        <h3 class="text-xl font-semibold text-yellow-500 mb-4">San Fernando Valley</h3>
+                        <ul class="space-y-2">
+                            <li><a href="locations/san-fernando-valley/encino/" class="text-gray-300 hover:text-yellow-500 transition-colors">Encino</a></li>
+                            <li><a href="locations/san-fernando-valley/sherman-oaks/" class="text-gray-300 hover:text-yellow-500 transition-colors">Sherman Oaks</a></li>
+                            <li><a href="locations/san-fernando-valley/north-hollywood/" class="text-gray-300 hover:text-yellow-500 transition-colors">North Hollywood</a></li>
+                            <li><a href="locations/san-fernando-valley/van-nuys/" class="text-gray-300 hover:text-yellow-500 transition-colors">Van Nuys</a></li>
+                            <li><a href="locations/san-fernando-valley/burbank/" class="text-gray-300 hover:text-yellow-500 transition-colors">Burbank</a></li>
+                            <li><a href="locations/san-gabriel-valley/pasadena/" class="text-gray-300 hover:text-yellow-500 transition-colors">Pasadena</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- Blog Section -->
+        <section class="py-24 bg-[#3D2412]">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-yellow-500 mb-4">Latest from Our Blog</h2>
+                    <p class="text-gray-300 text-lg">Expert tips and insights on floor and furniture care</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <article class="bg-black rounded-xl overflow-hidden shadow-lg border border-gray-800">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/Wood Floor Cleaning & Polishing.jpg" alt="Blog post image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-gray-400 mb-2">October 7, 2025</div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">The Complete Guide to Hardwood Floor Maintenance</h3>
+                            <p class="text-gray-300 mb-4">Learn the essential techniques for maintaining your hardwood floors to keep them looking beautiful for years to come.</p>
+                            <a href="blog/the-complete-guide-to-hardwood-floor-maintenance.html" class="text-yellow-500 hover:text-yellow-400 transition-colors font-medium">Read More →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-black rounded-xl overflow-hidden shadow-lg border border-gray-800">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/Professional-upholstery-cleaning-process.jpg" alt="Blog post image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-gray-400 mb-2">September 28, 2025</div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">5 Tips for Extending the Life of Your Furniture</h3>
+                            <p class="text-gray-300 mb-4">Discover professional secrets to keeping your furniture looking new and lasting longer with these simple maintenance tips.</p>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-400 transition-colors font-medium">Read More →</a>
+                        </div>
+                    </article>
+                    
+                    <article class="bg-black rounded-xl overflow-hidden shadow-lg border border-gray-800">
+                        <div class="aspect-w-16 aspect-h-9 h-48 overflow-hidden">
+                            <img src="images/general/services/Hardwood floor refinishing process.jpg" alt="Blog post image" class="w-full h-full object-cover">
+                        </div>
+                        <div class="p-6">
+                            <div class="text-sm text-gray-400 mb-2">September 15, 2025</div>
+                            <h3 class="text-xl font-semibold mb-3 text-white">When to Refinish vs. Replace Your Floors</h3>
+                            <p class="text-gray-300 mb-4">Not sure whether your hardwood floors need refinishing or complete replacement? We'll help you decide with this guide.</p>
+                            <a href="#" class="text-yellow-500 hover:text-yellow-400 transition-colors font-medium">Read More →</a>
+                        </div>
+                    </article>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- CTA Section -->
         <section class="py-24 bg-black text-white">
             <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-yellow-500">Ready to Revive Your Furniture?</h2>
+                <h2 class="text-3xl md:text-4xl font-bold mb-8 text-yellow-500">Ready to Transform Your Space?</h2>
                 <p class="text-xl mb-12 text-gray-300">Experience the Tykoon difference today</p>
-                <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
-                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
-                    </svg>
-                    Get Your Free Quote
-                </a>
+                <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="https://wa.me/13233798057?text=Hi%20Tykoon!%20I'd%20like%20to%20get%20a%20free%20quote%20for%20your%20professional%20floor%20and%20furniture%20care%20services." target="_blank" class="inline-block bg-green-500 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-400 transform hover:scale-105 transition-all duration-300 flex items-center justify-center">
+                        <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                        </svg>
+                        Get Your Free Quote
+                    </a>
+                    <a href="contact.html" class="inline-block border border-yellow-500 text-yellow-500 px-8 py-4 rounded-full text-lg font-semibold hover:bg-yellow-500 hover:text-black transition-colors duration-300">Contact Us</a>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-gray-300 py-12">
+    <footer class="bg-[#3D2412] text-gray-300 py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div>
@@ -356,9 +620,9 @@
                 <div>
                     <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
                     <ul class="space-y-2">
-                        <li><a href="#services" class="hover:text-white transition-colors duration-300">Services</a></li>
-                        <li><a href="#features" class="hover:text-white transition-colors duration-300">Features</a></li>
-                        <li><a href="#benefits" class="hover:text-white transition-colors duration-300">Benefits</a></li>
+                        <li><a href="#services" class="hover:text-yellow-500 transition-colors duration-300">Services</a></li>
+                        <li><a href="#features" class="hover:text-yellow-500 transition-colors duration-300">Features</a></li>
+                        <li><a href="#benefits" class="hover:text-yellow-500 transition-colors duration-300">Benefits</a></li>
                     </ul>
                 </div>
                 <div>
