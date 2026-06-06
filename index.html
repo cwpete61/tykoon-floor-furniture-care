@@ -25,6 +25,18 @@
             }
         }
     </script>
+    <style>
+        .home-hero {
+            background-image: url('images/heroes/home/hero.png');
+            background-size: cover;
+            background-position: center;
+        }
+        @media (max-width: 767px) {
+            .home-hero {
+                background-image: url('images/heroes/home/Mobile.png');
+            }
+        }
+    </style>
 </head>
 <body class="font-['Inter'] antialiased bg-[#481809] text-gray-900">
     <header class="fixed w-full bg-black/95 backdrop-blur-sm shadow-sm z-50">
@@ -245,7 +257,7 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="relative h-[600px] flex items-center justify-center" style="background-image: url('images/heroes/home/hero.png'); background-size: cover; background-position: center;">
+        <section class="home-hero relative h-[600px] flex items-center justify-center">
             <div class="absolute inset-0 bg-black/70"></div>
             <div class="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="max-w-4xl mx-auto text-center">
